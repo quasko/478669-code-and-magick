@@ -182,14 +182,14 @@
 </template>
 <script>
   var WIZARD_HEIGHT_RATIO = 1.337;
-  var SPEED_FAST = 5;
-  var SPEED_SLOW = 2;
+  var DOWNWIND_SPEED = 5;
+  var UPWIND_SPEED = 2;
   var fireballSize = 22;
   var wizardSpeed = 3;
   var wizardWidth = 70;
 
   var getFireballSpeed = function(left) {
-    return left ? SPEED_FAST : SPEED_SLOW;
+    return left ? DOWNWIND_SPEED : UPWIND_SPEED;
   };
 
   var getWizardHeight = function() {
