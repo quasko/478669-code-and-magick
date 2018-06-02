@@ -9,6 +9,7 @@ var GAP = 10;
 var FONT_GAP = 15;
 var GRAPH_HEIGHT = 150;
 var GRAPH_Y_OFFSET = 75;
+var SCORE_Y_OFFSET = 10;
 var COLUMN_WIDTH = 40;
 var COLUMN_GAP = 50;
 var TEXT_X = 40;
@@ -68,5 +69,7 @@ window.renderStatistics = function (ctx, names, times) {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     }
     ctx.fillRect(CLOUD_X + TEXT_X + (COLUMN_WIDTH + COLUMN_GAP) * i, CLOUD_Y + GRAPH_HEIGHT - barHeight + GRAPH_Y_OFFSET, COLUMN_WIDTH, barHeight);
+    ctx.fillStyle = '#000000';
+    ctx.fillText(Math.round(times[i]), CLOUD_X + TEXT_X + (COLUMN_WIDTH + COLUMN_GAP) * i, CLOUD_Y + GRAPH_HEIGHT - barHeight + GRAPH_Y_OFFSET - SCORE_Y_OFFSET);
   }
 };
