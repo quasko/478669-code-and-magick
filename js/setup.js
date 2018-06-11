@@ -50,7 +50,7 @@ var wizardParams = {
  * @param {string} eyesColor - цвет глаз волшебника
  */
 var userDialog = document.querySelector('.setup');
-var setupSimilarElement = userDialog.querySelector('.setup-similar')
+var setupSimilarElement = userDialog.querySelector('.setup-similar');
 var similarListElement = document.querySelector('.setup-similar-list');
 var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
 
